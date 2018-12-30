@@ -1,0 +1,25 @@
+.phone {
+    position: fixed;
+    right: 70px;
+    bottom: 140px;
+    background-color: #fcbd28;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    transition: all .3s;
+    z-index: 999;
+}
+
+.phone:hover {
+    cursor: pointer;
+}
+
+.phone .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    transform: rotate(90deg);
+    transform-origin: 10px 1px;
+}

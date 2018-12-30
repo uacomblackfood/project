@@ -1,0 +1,34 @@
+.footer {
+    width: 100%;
+    position: relative;
+    background-color: #000;
+}
+
+.footer .inner {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .rights {
+    text-align: center;
+    color: #676767;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.footer .rights span {
+    padding: 0 8px;
+}
+
+.footer .rights span:first-child {
+    padding: 0;
+}
+
+.footer .rights span:last-child {
+    padding: 0;
+}

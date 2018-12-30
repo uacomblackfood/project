@@ -1,0 +1,43 @@
+.products {
+    position: relative;
+    background: url('../../static/products-main.png') top no-repeat;
+    background-size: contain;
+}
+
+.products .products-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../static/additional-bg.png') top;
+    background-size: cover;
+    opacity: .93;
+}
+
+.products .products-bg2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+}
+
+.products .products-bg img {
+    width: 100vw;
+}
+
+.products .products-bg .bg2 {
+    margin-top: -5px;
+}
+
+.products > .inner {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 140px 0 133px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Myriad Pro", sans-serif;
+}
+
+.main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../static/main.jpg') center no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.main-bg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.main .inner {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 999;
+}
+
+.main .main-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    max-width: 1200px;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.main .main-text {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.main .text-b {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+.main .text-x {
+    color: #b6b6b6;
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 26px;
+    max-width: 230px;
+}
+
+.icon {
+    color: #d3b138;
+    margin-right: 34px;
+    transition: all .3s;
+}
+
+.icon:last-child {
+    margin-right: 0;
+}
+
+.icon:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.citate {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    z-index: 2;
+}
+
+.some {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.some span {
+    position: relative;
+}
+
+.phones {
+    position: absolute;
+    right: 150px;
+    bottom: -38px;
+    display: flex;
+    flex-direction: column;
+}
+
+.phones .phone {
+    color: #fcbd28;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .3s;
+}
+
+.phones .phone:hover {
+    color: white;
+}
