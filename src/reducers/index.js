@@ -1,17 +1,17 @@
-// import { combineReducers } from 'redux'
-// import createBrowserHistory from 'history/createBrowserHistory'
+import { combineReducers } from 'redux'
+import createBrowserHistory from 'history/createBrowserHistory'
 
-// const initialState = {}
+const initialState = {}
 
-// function store(state = initialState, action) {
-//     switch(action.type) {
-//         default:
-//             return state
-//     }
-// }
+function store(state = initialState, action) {
+    switch(action.type) {
+        default:
+            return state
+    }
+}
 
-// export const history = createBrowserHistory({ basename : '/' })
+export const history = createBrowserHistory({ basename : '/' })
 
-// export default combineReducers({
-//     store
-// })
+export default combineReducers({
+    store
+})
