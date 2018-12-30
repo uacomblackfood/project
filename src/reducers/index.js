@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import createBrowserHistory from 'history/createBrowserHistory.js'
+import createBrowserHistory from 'history/lib/createBrowserHistory'
 
 const initialState = {}
 
