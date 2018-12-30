@@ -32,6 +32,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "history": "^4.7.2",
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
     "react-router-redux": "^4.0.8",
