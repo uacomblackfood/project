@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Element } from 'react-scroll'
 import ProductItem from '../ProductItem/index'
 import { Parallax } from 'react-scroll-parallax'
 import pizza1 from '../../static/pizza1.jpg'
@@ -15,8 +16,6 @@ import pizza11 from '../../static/pizza11.jpg'
 import pizza12 from '../../static/pizza12.jpg'
 import pizza13 from '../../static/pizza13.jpg'
 import pizza14 from '../../static/pizza14.jpg'
-// import products from '../../static/products.png'
-// import additional from '../../static/additional-bg.png'
 import './styles.css'
 
 class ProductsContainer extends Component {
@@ -27,7 +26,7 @@ class ProductsContainer extends Component {
         </div>
         <div className="products-bg2">
         </div>
-        <div className="inner">
+        <Element name="test" className="inner">
             <Parallax
                 className="custom-class"
                 offsetYMax={20}
@@ -224,7 +223,7 @@ class ProductsContainer extends Component {
                     imgSrc={pizza14}
                 />
             </Parallax>
-        </div>
+        </Element>
       </div>
     )
   }

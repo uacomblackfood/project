@@ -12,13 +12,42 @@
     align-items: center;
     position: relative;
     width: 370px;
-    height: 72px;
     background-color: rgba(0,0,0,.6);
     border-radius: 33px;
     right: -100px;
     margin-bottom: 15px;
     cursor: pointer;
     transition: all .3s;
+}
+
+@media (min-width: 320px) {
+    .side-menu {
+        right: -300px;
+    }
+
+    .side-menu .item span {
+        display: none;
+    }
+
+    .side-menu .item {
+        height: 60px;
+    }
+}
+
+@media (min-width: 780px) {
+    .side-menu {
+        right: -170px;
+    }
+
+
+    .side-menu .item span {
+        display: block;
+    }
+
+
+    .side-menu .item {
+        height: 72px;
+    }
 }
 
 .side-menu .item:hover {
@@ -45,4 +74,16 @@
 
 .side-menu .item img {
     margin-left: 25px;
+}
+
+@media (min-width: 320px) {
+    .side-menu .item img {
+        height: 30px;
+    }
+}
+
+@media (min-width: 780px) {
+    .side-menu .item img {
+        height: 50px;
+    }
 }

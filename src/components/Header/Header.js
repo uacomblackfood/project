@@ -5,9 +5,31 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 class Header extends Component {
+  state = {
+    activeClass: ''
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', (event) => {
+      let activeClass = ''
+      if (window.pageYOffset > 100) {
+        activeClass = 'active'
+      } else {
+        activeClass = ''
+      }
+      this.setState({
+        activeClass
+      })
+   })
+  }
+
   render() {
+    const {
+      activeClass
+    } = this.state
+
     return (
-      <div className="header">
+      <div className={`header ${activeClass}`}>
         <div className="inner">
           <a
             href="/"
@@ -17,17 +39,19 @@ class Header extends Component {
           </a>
           <div className="menu">
           </div>
-          <a
-            // eslint-disable-next-line react/jsx-no-target-blank
-            target="_blank"
-            className="social-section"
-            href="https://instagram.com/blackfood.com.ua?utm_source=ig_profile_share&igshid=28yrg0tedpi8"
-          >
-            <FontAwesomeIcon
-              className="icon"
-              size="lg"
-              icon={faInstagram}
-            />
+          <div className="right-part">
+            <a
+              // eslint-disable-next-line react/jsx-no-target-blank
+              target="_blank"
+              className="social-section"
+              href="https://instagram.com/blackfood.com.ua?utm_source=ig_profile_share&igshid=28yrg0tedpi8"
+            >
+              <FontAwesomeIcon
+                className="icon"
+                size="lg"
+                icon={faInstagram}
+              />
+            </a>
             <div className="phones">
               <a href="tel:+380963294559" className="phone">
                 +380(96)-329-45-59
@@ -39,7 +63,7 @@ class Header extends Component {
                 +380(63)-374-45-49
               </a>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     )

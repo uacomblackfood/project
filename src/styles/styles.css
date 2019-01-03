@@ -53,15 +53,51 @@
     z-index: 2;
 }
 
+@media (min-width: 320px) {
+    .main .text-x {
+        font-size: 18px;
+    }
+
+    .main .text-b {
+        font-size: 24px;
+    }
+
+    .main .main-text {
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 460px) {
+    .main .text-x {
+        font-size: 24px;
+    }
+
+    .main .text-b {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main .text-x {
+        font-size: 28px;
+    }
+
+    .main .text-b {
+        font-size: 35px;
+    }
+
+    .main .main-text {
+        padding-left: 0px;
+    }
+}
+
 .main .text-b {
-    font-size: 35px;
     font-weight: bold;
     color: white;
 }
 
 .main .text-x {
     color: #b6b6b6;
-    font-size: 28px;
     font-weight: bold;
     padding-left: 26px;
     max-width: 230px;
@@ -106,9 +142,7 @@
 }
 
 .phones {
-    position: absolute;
-    right: 150px;
-    bottom: -38px;
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -117,10 +151,21 @@
     color: #fcbd28;
     text-decoration: none;
     font-weight: bold;
-    font-size: 14px;
     transition: all .3s;
 }
 
 .phones .phone:hover {
     color: white;
+}
+
+@media (min-width: 320px) {
+    .phones .phone {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 460px) {
+    .phones .phone {
+        font-size: 14px;
+    }
 }

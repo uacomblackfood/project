@@ -32,3 +32,29 @@
 .footer .rights span:last-child {
     padding: 0;
 }
+
+@media (min-width: 320px) {
+    .footer {
+        padding: 10px;
+    }
+
+    .footer .inner {
+        padding: 0px;
+    }
+}
+
+@media (min-width: 780px) {
+    .footer {
+        padding: 0 10px;
+    }
+
+    .footer .inner {
+        padding: 20px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer {
+        padding: 0;
+    }
+}
